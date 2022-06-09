@@ -7,8 +7,10 @@ import { toast } from "react-toastify";
 import t from "../../assets/trust.png";
 import c from "../../assets/car.png";
 import i from "../../assets/immi.png";
+import { useNavigate } from "react-router-dom";
 
 const MyPortfolio = () => {
+  const navigate = useNavigate();
   return (
     <section>
       <div className="mt-6 max-w-screen-xl md:flex mx-auto">
@@ -284,7 +286,7 @@ const MyPortfolio = () => {
           <div class="stat">
             <div class="stat-value">My Projects</div>
             <div class="stat-actions">
-              <button class="btn  btn-outline px-12 bg-gradient-to-r from-white to-neutral font-bold text-xl">
+              <button onClick={()=>navigate('/projects')} class="btn  btn-outline px-12 bg-gradient-to-r from-white to-neutral font-bold text-xl">
                 All Projects
               </button>
             </div>

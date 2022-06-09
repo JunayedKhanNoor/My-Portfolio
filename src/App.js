@@ -5,13 +5,20 @@ import MyPortfolio from './components/Protfolio/MyPortfolio';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import Navbar from './components/Protfolio/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import Projects from './components/Protfolio/Projects';
+import Contact from './components/Protfolio/Contact';
 
 function App() {
   AOS.init();
   return (
     <div >
       <Navbar></Navbar>
-      <MyPortfolio></MyPortfolio>
+      <Routes>
+      <Route path='/' element={<MyPortfolio></MyPortfolio>}></Route>
+      <Route path='/projects' element={<Projects></Projects>}></Route>
+      <Route path='/contact' element={<Contact></Contact>}></Route>
+      </Routes>
       <ToastContainer />
     </div>
   );
