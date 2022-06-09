@@ -1,6 +1,8 @@
 import React from "react";
 import myImage from "../../assets/Junayed.jpg";
 import { AiFillGithub } from "react-icons/ai";
+import { BsFacebook,BsLinkedin } from "react-icons/bs";
+import { BiPhoneCall} from "react-icons/bi";
 import { toast } from "react-toastify";
 
 const MyPortfolio = () => {
@@ -11,13 +13,12 @@ const MyPortfolio = () => {
           <div className="md:fixed">
             <div className="md:block">
               <img alt="" className="h-32 w-32 rounded-full mx-auto " src={myImage} />
-              <div className="mb-12 text-center mt-4 justify-center items-center">
+              <div className="mb-12 text-center mt-3 justify-center items-center">
                 <h1 className="text-2xl  text-gray-800 font-bold">Mohammad Junayed Khan Noor</h1>
                 <div className="md:text-lg text-gray-600">Junior Web Developer</div>
-                <div className="text-gray-600 md:hidden mt-1">(junayednoor@gmail.com)</div>
               </div>
             </div>
-            <div className="mx-4 my-4 hidden md:block">
+            <div className="mx-4 my-4  md:block">
               <div className="my-5 text-lg text-gray-600 flex">
                 <div className="mr-2">
                   <svg
@@ -47,40 +48,57 @@ const MyPortfolio = () => {
                 </div>
                 Dhaka, Bangladesh
               </div>
-              <span
-                onClick={() =>
-                  window.open("https://www.linkedin.com/in/mohammad-junayed-khan-noor-097079141/")
-                }
-                className="my-5 text-blue-500 text-lg  flex"
-                role="button"
-              >
+              <div className="my-5 text-lg text-gray-600 flex">
                 <div className="mr-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h16c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z M8.339,18.337H5.667	v-8.59h2.672V18.337z M7.003,8.574c-0.856,0-1.548-0.694-1.548-1.548s0.691-1.548,1.548-1.548c0.854,0,1.548,0.693,1.548,1.548	S7.857,8.574,7.003,8.574z M18.338,18.337h-2.669V14.16c0-0.996-0.018-2.277-1.388-2.277c-1.39,0-1.601,1.086-1.601,2.207v4.248	h-2.667v-8.59h2.56v1.174h0.037c0.355-0.675,1.227-1.387,2.524-1.387c2.704,0,3.203,1.778,3.203,4.092V18.337z" />
-                  </svg>
+                  <BiPhoneCall className="text-neutral h-6 w-6"></BiPhoneCall>
                 </div>
-                LinkedIn
-              </span>
-              <span
-                onClick={() => window.open("https://github.com/JunayedKhanNoor")}
-                className="my-5 text-blue-500 text-lg  flex"
-                role="button"
-              >
-                <div className="mr-2">
-                  <AiFillGithub className="text-neutral h-6 w-6" />
-                </div>
-                Github
-              </span>
+                +8801303021131
+              </div>
+              <div className="flex">
+                <span
+                  onClick={() =>
+                    window.open("https://www.linkedin.com/in/mohammad-junayed-khan-noor-097079141/")
+                  }
+                  className="my-5 text-blue-500 text-lg  flex"
+                  role="button"
+                >
+                  <div className="mr-2">
+                    <BsLinkedin className="text-neutral h-8 w-8"></BsLinkedin>
+                  </div>
+                </span>
+                <span
+                  onClick={() => window.open("https://github.com/JunayedKhanNoor")}
+                  className="my-5 text-blue-500 text-lg  flex"
+                  role="button"
+                >
+                  <div className="mr-2">
+                    <AiFillGithub className="text-neutral h-8 w-8" />
+                  </div>
+                </span>
+                <span
+                  onClick={() => window.open("https://www.facebook.com/junayed.noor")}
+                  className="my-5 text-blue-500 text-lg  flex"
+                  role="button"
+                >
+                  <div className="mr-2">
+                    <BsFacebook className="text-neutral h-8 w-8" />
+                  </div>
+                </span>
+              </div>
             </div>
-            <div className="mx-4 hidden md:block">
+            <div className="mx-4  md:block">
               <span onClick={() => toast("Please email to Junayed")} className="btn w-full">
                 Hire me
               </span>
+            </div>
+            <div className="mx-4  md:block mt-3">
+              <a
+              href="Junayed-Resume-WebDev.pdf"
+                className="btn btn-secondary w-full"
+                download='Junayed-Resume-WebDev.pdf'
+              >
+                Get Resume
+              </a>
             </div>
           </div>
         </div>
@@ -128,6 +146,25 @@ const MyPortfolio = () => {
               </li>
               <h1 className="mb-4 text-4xl text-gray-700 font-bold">Projects</h1>
               <li className="mb-4">
+                <h2 className="text-2xl font-medium text-gray-800">Trust Accessories</h2>
+                <div className="mt-1">
+                  <div>
+                    <small className="text-base text-gray-800">
+                      Tools manufacture management
+                    </small>
+                  </div>
+                  <div>
+                    <span
+                      onClick={() => window.open("https://trust-accessories.web.app/")}
+                      className="my-5 text-blue-500 text-lg"
+                      role="button"
+                    >
+                      Live Link
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li className="mb-4">
                 <h2 className="text-2xl font-medium text-gray-800">Auto-Mart</h2>
                 <div className="mt-1">
                   <div>
@@ -150,9 +187,7 @@ const MyPortfolio = () => {
                 <h2 className="text-2xl font-medium text-gray-800">To-Do-List </h2>
                 <div className="mt-1">
                   <div>
-                    <small className="text-base text-gray-800">
-                    Task management app
-                    </small>
+                    <small className="text-base text-gray-800">Task management app</small>
                   </div>
                   <div>
                     <span
@@ -170,7 +205,7 @@ const MyPortfolio = () => {
                 <div className="mt-1">
                   <div>
                     <small className="text-base text-gray-800">
-                    Immigration consultancy website
+                      Immigration consultancy website
                     </small>
                   </div>
                   <div>
