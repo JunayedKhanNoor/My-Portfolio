@@ -1,16 +1,19 @@
 import React from "react";
 import myImage from "../../assets/Junayed.jpg";
 import { AiFillGithub } from "react-icons/ai";
-import { BsFacebook,BsLinkedin } from "react-icons/bs";
-import { BiPhoneCall} from "react-icons/bi";
+import { BsFacebook, BsLinkedin } from "react-icons/bs";
+import { BiPhoneCall } from "react-icons/bi";
 import { toast } from "react-toastify";
+import t from "../../assets/trust.png";
+import c from "../../assets/car.png";
+import i from "../../assets/immi.png";
 
 const MyPortfolio = () => {
   return (
-    <div>
-      <div className="mt-6 max-w-screen-lg md:flex mx-auto">
-        <div className="md:w-2/5 p-2 relative">
-          <div className="md:fixed">
+    <section>
+      <div className="mt-6 max-w-screen-xl md:flex mx-auto">
+        <div className="md:w-2/6 p-2 relative">
+          <div>
             <div className="md:block">
               <img alt="" className="h-32 w-32 rounded-full mx-auto " src={myImage} />
               <div className="mb-12 text-center mt-3 justify-center items-center">
@@ -93,9 +96,9 @@ const MyPortfolio = () => {
             </div>
             <div className="mx-4  md:block mt-3">
               <a
-              href="Junayed-Resume-WebDev.pdf"
+                href="Junayed-Resume-WebDev.pdf"
                 className="btn btn-secondary w-full"
-                download='Junayed-Resume-WebDev.pdf'
+                download="Junayed-Resume-WebDev.pdf"
               >
                 Get Resume
               </a>
@@ -149,9 +152,7 @@ const MyPortfolio = () => {
                 <h2 className="text-2xl font-medium text-gray-800">Trust Accessories</h2>
                 <div className="mt-1">
                   <div>
-                    <small className="text-base text-gray-800">
-                      Tools manufacture management
-                    </small>
+                    <small className="text-base text-gray-800">Tools manufacture management</small>
                   </div>
                   <div>
                     <span
@@ -275,7 +276,62 @@ const MyPortfolio = () => {
           </div>
         </div>
       </div>
-    </div>
+      <section className="w-[95%] mx-auto">
+        <div
+          data-aos="flip-up"
+          class="stats bg-gradient-to-r from-cyan-500 to-blue-500 text-primary-content w-[90%] block mx-auto text-center"
+        >
+          <div class="stat">
+            <div class="stat-value">My Projects</div>
+            <div class="stat-actions">
+              <button class="btn  btn-outline px-12 bg-gradient-to-r from-white to-neutral font-bold text-xl">
+                All Projects
+              </button>
+            </div>
+          </div>
+        </div>
+        <section className="hidden md:block">
+          <div class="grid grid-rows-3 grid-flow-col gap-8 h-80 my-12 px-6">
+            <div data-aos="zoom-out-down" class="row-start-1 row-span-2">
+              <h1 className="animate-pulse text-center text-4xl font-bold my-4">
+                Trust Accessories
+              </h1>
+              <img src={t} alt="" />
+            </div>
+            <div data-aos="zoom-out-down" class="row-start-2 row-span-2">
+              <h1 className="animate-pulse text-center text-4xl font-bold my-4">Auto Mart</h1>
+              <img src={c} alt="" />
+            </div>
+            <div data-aos="zoom-out-down" class="row-start-1 row-span-2">
+              <h1 className="animate-pulse text-center text-4xl  font-bold my-4">
+                Immigration Lab
+              </h1>
+              <img src={i} alt="" />
+            </div>
+          </div>
+        </section>
+        <section className="block md:hidden">
+          <div class="grid grid-cols-1 gap-8 my-12 px-6">
+            <div data-aos="zoom-out-down" >
+              <h1 className="animate-pulse text-center text-4xl font-bold my-4">
+                Trust Accessories
+              </h1>
+              <img src={t} alt="" />
+            </div>
+            <div data-aos="zoom-out-down" >
+              <h1 className="animate-pulse text-center text-4xl font-bold my-4">Auto Mart</h1>
+              <img src={c} alt="" />
+            </div>
+            <div data-aos="zoom-out-down" >
+              <h1 className="animate-pulse text-center text-4xl  font-bold my-4">
+                Immigration Lab
+              </h1>
+              <img src={i} alt="" />
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
   );
 };
 
