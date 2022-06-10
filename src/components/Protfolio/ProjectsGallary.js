@@ -12,12 +12,12 @@ const ProjectsGallary = () => {
       <section className="w-[95%] mx-auto">
         <div
           data-aos="flip-up"
-          class="stats bg-gradient-to-r from-cyan-500 to-blue-500 text-primary-content w-[90%] block mx-auto text-center"
+          className="stats bg-gradient-to-r from-cyan-500 to-blue-500 text-primary-content w-[90%] block mx-auto text-center"
         >
-          <div class="stat">
-            <div class="stat-value">My Projects</div>
-            <div class="stat-actions">
-              <button class="btn  btn-outline px-12 bg-gradient-to-r from-white to-neutral font-bold text-xl">
+          <div className="stat">
+            <div className="stat-value">My Projects</div>
+            <div className="stat-actions">
+              <button className="btn  btn-outline px-12 bg-gradient-to-r from-white to-neutral font-bold text-xl">
                 All Projects
               </button>
             </div>
@@ -36,18 +36,18 @@ const ProjectsGallary = () => {
           </div>
         </section>
         <section className="hidden md:block">
-          <div class="grid grid-rows-3 grid-flow-col gap-8 h-80 my-12 px-6">
-            <div data-aos="zoom-out-down" class="row-start-1 row-span-2">
+          <div className="grid grid-rows-3 grid-flow-col gap-8 h-80 my-12 px-6">
+            <div data-aos="zoom-out-down" className="row-start-1 row-span-2">
               <h1 className="animate-pulse text-center text-4xl font-bold my-4">
                 Trust Accessories
               </h1>
               <img src={t} alt="" />
             </div>
-            <div data-aos="zoom-out-down" class="row-start-2 row-span-2">
+            <div data-aos="zoom-out-down" className="row-start-2 row-span-2">
               <h1 className="animate-pulse text-center text-4xl font-bold my-4">Auto Mart</h1>
               <img src={c} alt="" />
             </div>
-            <div data-aos="zoom-out-down" class="row-start-1 row-span-2">
+            <div data-aos="zoom-out-down" className="row-start-1 row-span-2">
               <h1 className="animate-pulse text-center text-4xl  font-bold my-4">
                 Immigration Lab
               </h1>
@@ -56,7 +56,7 @@ const ProjectsGallary = () => {
           </div>
         </section>
         <section className="block md:hidden">
-          <div class="grid grid-cols-1 gap-8 my-12 px-6">
+          <div className="grid grid-cols-1 gap-8 my-12 px-6">
             <div data-aos="zoom-out-down">
               <h1 className="animate-pulse text-center text-4xl font-bold my-4">
                 Trust Accessories

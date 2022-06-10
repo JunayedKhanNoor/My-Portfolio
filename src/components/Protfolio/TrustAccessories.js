@@ -6,7 +6,7 @@ import Footer from "./Footer";
 const TrustAccessories = () => {
   return (
     <div className="mt-20">
-      <div class="">
+      <div className="">
         <div className="max-w-7xl mx-auto my-3">
           <h1 className="text-3xl font-bold">
             Trust-Accessories{" "}

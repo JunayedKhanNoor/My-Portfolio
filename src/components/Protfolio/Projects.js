@@ -6,15 +6,15 @@ const Projects = () => {
   return (
     <div>
       <section>
-        <div class="stats bg-primary text-primary-content max-w-3xl mx-auto block my-6">
-          <div class="stat">
-            <div class="stat-value text-center">My Projects</div>
+        <div className="stats bg-primary text-primary-content max-w-3xl mx-auto block my-6">
+          <div className="stat">
+            <div className="stat-value text-center">My Projects</div>
           </div>
         </div>
       </section>
       <section>
-        <div class="grid grid-cols-1   gap-4 ">
-          <div class="">
+        <div className="grid grid-cols-1   gap-4 ">
+          <div className="">
             <div className="max-w-3xl mx-auto my-3">
               <h1 className="text-3xl font-bold">
                 Trust-Accessories{" "}
@@ -70,7 +70,7 @@ const Projects = () => {
 
             <img className="max-w-3xl mx-auto" src={t} alt="" />
           </div>
-          <div class="">
+          <div className="">
             <div className="max-w-3xl mx-auto my-3">
               <h1 className="text-3xl font-bold">
                 Trust-Accessories{" "}
@@ -125,7 +125,7 @@ const Projects = () => {
             </div>
             <img className="max-w-3xl mx-auto" src={c} alt="" />
           </div>
-          <div class="">
+          <div className="">
             <div className="max-w-3xl mx-auto my-3">
               <h1 className="text-3xl font-bold">
                 Trust-Accessories{" "}
