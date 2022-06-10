@@ -8,6 +8,7 @@ import Navbar from './components/Protfolio/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Projects from './components/Protfolio/Projects';
 import Contact from './components/Protfolio/Contact';
+import ProjectsGallary from './components/Protfolio/ProjectsGallary';
 
 function App() {
   AOS.init();
@@ -16,7 +17,8 @@ function App() {
       <Navbar></Navbar>
       <Routes>
       <Route path='/' element={<MyPortfolio></MyPortfolio>}></Route>
-      <Route path='/projects' element={<Projects></Projects>}></Route>
+      {/* <Route path='/projects' element={<Projects></Projects>}></Route> */}
+      <Route path='/projects' element={<ProjectsGallary></ProjectsGallary>}></Route>
       <Route path='/contact' element={<Contact></Contact>}></Route>
       </Routes>
       <ToastContainer />
