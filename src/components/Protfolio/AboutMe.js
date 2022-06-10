@@ -14,6 +14,7 @@ const AboutMe = () => {
               <p class="mt-1 text-lg font-medium text-gray-600">Mohammad Junayed Khan Noor</p>
               <p class="mt-1 text-sm font-medium text-gray-600">Green University of bangladesh</p>
               <p class="mt-1 text-sm font-medium text-gray-600">CSE Department</p>
+              <p class="mt-1 text-sm font-medium text-gray-600">Dhaka, Bangladesh</p>
               <p class="mt-1 text-sm font-medium text-gray-600">2021</p>
             </div>
 
