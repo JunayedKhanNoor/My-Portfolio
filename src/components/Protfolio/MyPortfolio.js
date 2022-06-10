@@ -11,7 +11,7 @@ import Home from "./Home";
 const MyPortfolio = () => {
   const navigate = useNavigate();
   return (
-    <main>
+    <main className="mt-20">
       <section>
         <div className="mt-6 max-w-screen-xl md:flex mx-auto">
           <div className="md:w-2/6 p-2 relative">
@@ -104,7 +104,7 @@ const MyPortfolio = () => {
                   className="btn btn-secondary w-full"
                   download="Junayed-Resume-WebDev.pdf"
                 >
-                  Get Resume
+                  Get Resume / Download
                 </a>
               </div>
             </div>

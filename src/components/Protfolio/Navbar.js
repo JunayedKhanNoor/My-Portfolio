@@ -1,22 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    const menuItems = (
-        <>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="projects">Projects Gallery</Link>
-          </li>
-          <li>
-            <Link to="contact">Contact Me</Link>
-          </li>
-        </>
-      );
-    return (
-        <div className=" bg-neutral">
+  const menuItems = (
+    <>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="projects">Projects Gallery</Link>
+      </li>
+      <li>
+        <Link to="contact">Contact Me</Link>
+      </li>
+    </>
+  );
+  return (
+    <div className=" bg-neutral fixed top-0 z-50 w-full mb-12">
       <div className="navbar max-w-7xl mx-auto  text-white">
         <div className="navbar-start">
           <div className="dropdown">
@@ -44,16 +44,14 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <a className="btn btn-ghost normal-case sm:text-xl lg:text-3xl font-bold">
-            Junayed
-          </a>
+          <a className="btn btn-ghost normal-case sm:text-xl lg:text-3xl font-bold">Junayed</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0 text-lg font-bold">{menuItems}</ul>
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Navbar;
