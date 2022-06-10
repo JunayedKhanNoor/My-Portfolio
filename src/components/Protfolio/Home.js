@@ -4,17 +4,22 @@ import Typical from "react-typical";
 import tr from "../../assets/Video/tr.mp4";
 import cr from "../../assets/Video/cr.mp4";
 import im from "../../assets/Video/im.mp4";
+import trust from "../../assets/Trust/ezgif.com-gif-maker.gif";
+import car from "../../assets/Trust/ezgif.com-gif-maker (1).gif";
+import immi from "../../assets/Trust/ezgif.com-gif-maker (2).gif";
+
 import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate =  useNavigate();
   return (
-    <div className="bg-neutral p-12">
+    <div className="bg-neutral p-3 md:p-12">
       <div className="text-white text-4xl font-bold text-center mb-12">
         <Typical steps={["My Projects", 1000, "Here It Is", 1000]} loop={Infinity} wrapper="p" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 justify-items-center">
         <div className="card w-full bg-base-100 shadow-xl">
-          <video autoPlay={true} src={tr} loop muted></video>
+          {/* <video autoPlay={true} src={tr} loop muted></video> */}
+          <figure><img src={trust} alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">
               Trust Accessories!
@@ -34,7 +39,8 @@ const Home = () => {
           </div>
         </div>
         <div className="card w-full bg-base-100 shadow-xl">
-          <video autoPlay={true} src={cr} loop muted></video>
+          {/* <video autoPlay={true} src={cr} loop muted></video> */}
+          <figure><img src={car} alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">
             Auto-Mart!
@@ -53,7 +59,8 @@ const Home = () => {
           </div>
         </div>
         <div className="card w-full bg-base-100 shadow-xl">
-          <video autoPlay={true} src={im} loop muted></video>
+          {/* <video autoPlay={true} src={im} loop muted></video> */}
+          <figure><img src={immi} alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">
             Immigration Lab!
