@@ -5,8 +5,8 @@ import error from "../assets/error.jpg"
 const NotFound = () => {
   const navigate = useNavigate();
   return (
-    <div>
-     <div className="flex justify-center mt-6">
+    <div className="mt-20">
+     <div className="flex justify-center">
      <button
         className="btn btn-success"
         onClick={() => {

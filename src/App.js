@@ -30,7 +30,7 @@ function App() {
       <Route path='/blogs' element={<Blogs></Blogs>}></Route>
       <Route path='/about' element={<AboutMe></AboutMe>}></Route>
       <Route path='/immigration' element={<ImmigrationLab></ImmigrationLab>}></Route>
-      <Route path="*" element={<NotFound></NotFound>}></Route>
+      <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <ToastContainer />
     </div>
