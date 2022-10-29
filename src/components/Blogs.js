@@ -1,6 +1,6 @@
-import React from "react";
-import Footer from "./Protfolio/Footer";
-import Typical from "react-typical";
+import React from 'react';
+import Footer from './Protfolio/Footer';
+import Typical from 'react-typical';
 const Blogs = () => {
   return (
     <div className="mt-20">
@@ -11,7 +11,11 @@ const Blogs = () => {
             <div class="stat-value">Blogs</div>
             <div class="stat-desc">Here we go</div>
             <div class="stat-value">
-              <Typical steps={["Coming soon", 1000, "Let's write!", 500]} loop={Infinity} wrapper="p" />
+              <Typical
+                steps={['Coming soon', 1000, "Let's write!", 500]}
+                loop={Infinity}
+                wrapper="p"
+              />
             </div>
           </div>
         </div>

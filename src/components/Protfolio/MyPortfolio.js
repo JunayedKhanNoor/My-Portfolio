@@ -1,12 +1,13 @@
-import React from "react";
-import myImage from "../../assets/Junayed.jpg";
-import { AiFillGithub } from "react-icons/ai";
-import { BsFacebook, BsLinkedin } from "react-icons/bs";
-import { BiPhoneCall } from "react-icons/bi";
-import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
-import Footer from "./Footer";
-import Home from "./Home";
+import React from 'react';
+import myImage from '../../assets/Junayed.jpg';
+import { AiFillGithub } from 'react-icons/ai';
+import { BsFacebook, BsLinkedin } from 'react-icons/bs';
+import { MdWork } from 'react-icons/md';
+import { BiPhoneCall } from 'react-icons/bi';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
+import Footer from './Footer';
+import Home from './Home';
 
 const MyPortfolio = () => {
   const navigate = useNavigate();
@@ -19,11 +20,19 @@ const MyPortfolio = () => {
               <div className="md:block">
                 <img alt="" className="h-32 w-32 rounded-full mx-auto " src={myImage} />
                 <div className="mb-12 text-center mt-3 justify-center items-center">
-                  <h1 className="text-2xl  text-gray-800 font-bold">Mohammad Junayed Khan Noor</h1>
-                  <div className="md:text-lg text-gray-600">Junior Web Developer</div>
+                  <h1 className="text-3xl  text-gray-800 font-bold">Mohammad Junayed Khan Noor</h1>
+                  <div className="md:text-lg text-gray-600 ">
+                    Assistant Software Quality Assurance Engineer and JavaScript enthusiast
+                  </div>
                 </div>
               </div>
               <div className="mx-4 my-4  md:block">
+                <div className="my-5 text-lg text-gray-600 flex">
+                  <div className="mr-2 mt-1">
+                    <MdWork />
+                  </div>
+                  Working at OnnoRokom Software Ltd, Dhaka, Bangladesh
+                </div>
                 <div className="my-5 text-lg text-gray-600 flex">
                   <div className="mr-2">
                     <svg
@@ -53,7 +62,7 @@ const MyPortfolio = () => {
                   </div>
                   Dhaka, Bangladesh
                 </div>
-                <div className="my-5 text-lg text-gray-600 flex">
+                <div className="mt-5 text-lg text-gray-600 flex">
                   <div className="mr-2">
                     <BiPhoneCall className="text-neutral h-6 w-6"></BiPhoneCall>
                   </div>
@@ -63,10 +72,10 @@ const MyPortfolio = () => {
                   <span
                     onClick={() =>
                       window.open(
-                        "https://www.linkedin.com/in/mohammad-junayed-khan-noor-097079141/"
+                        'https://www.linkedin.com/in/mohammad-junayed-khan-noor-097079141/'
                       )
                     }
-                    className="my-5 text-blue-500 text-lg  flex"
+                    className="my-3 text-blue-500 text-lg  flex"
                     role="button"
                   >
                     <div className="mr-2">
@@ -74,8 +83,8 @@ const MyPortfolio = () => {
                     </div>
                   </span>
                   <span
-                    onClick={() => window.open("https://github.com/JunayedKhanNoor")}
-                    className="my-5 text-blue-500 text-lg  flex"
+                    onClick={() => window.open('https://github.com/JunayedKhanNoor')}
+                    className="my-3 text-blue-500 text-lg  flex"
                     role="button"
                   >
                     <div className="mr-2">
@@ -83,8 +92,8 @@ const MyPortfolio = () => {
                     </div>
                   </span>
                   <span
-                    onClick={() => window.open("https://www.facebook.com/junayed.noor")}
-                    className="my-5 text-blue-500 text-lg  flex"
+                    onClick={() => window.open('https://www.facebook.com/junayed.noor')}
+                    className="my-3 text-blue-500 text-lg  flex"
                     role="button"
                   >
                     <div className="mr-2">
@@ -93,12 +102,7 @@ const MyPortfolio = () => {
                   </span>
                 </div>
               </div>
-              <div className="mx-4  md:block">
-                <span onClick={() => toast("Please email to Junayed")} className="btn w-full">
-                  Hire me
-                </span>
-              </div>
-              <div className="mx-4  md:block mt-3">
+              <div className="mx-4  md:block ">
                 <a
                   href="Junayed-Resume-WebDev.pdf"
                   className="btn btn-secondary w-full"
@@ -107,17 +111,22 @@ const MyPortfolio = () => {
                   Get Resume / Download
                 </a>
               </div>
+              <div className="mx-4  md:block mt-3">
+                <span onClick={() => toast('Please email to Junayed')} className="btn w-full">
+                  Hire me
+                </span>
+              </div>
             </div>
           </div>
           <div className="md:w-2/3 p-2 w-full">
-            <div className="mx-4 mb-6">
+            {/* <div className="mx-4 mb-6">
               <h1 className="mb-4 text-4xl text-gray-700 font-bold">Career Objective</h1>
               <p className="text-lg">
                 To peruse strong engineering skill as an enthusiastic and hardworking web
                 application developer with focused ethics, an ability to increase my knowledge and
                 contribute to significant software development.
               </p>
-            </div>
+            </div> */}
             <div className="mx-4">
               <h1 className="mb-4 text-4xl text-gray-700 font-bold">Education</h1>
               <ul>
@@ -151,6 +160,86 @@ const MyPortfolio = () => {
                     </div>
                   </div>
                 </li>
+                <div>
+                  <h1 className="mb-4 text-4xl text-gray-700 font-bold">
+                    {' '}
+                    Software Development Skill
+                  </h1>
+                  <ul>
+                    <li className="mb-6 flex flex-wrap">
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        HTML-5
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        CSS-3
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        Bootstrap
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        React Bootstrap
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        Tailwind css
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        DaisyUI
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        ReactJS
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        React Router
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        React Query
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        React Hook Form
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        React Query
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        ExpressJS
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        NodeJS
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        MongoDB
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        Firebase Authentication
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h1 className="mb-4 text-4xl text-gray-700 font-bold"> Software Testing Skill</h1>
+                  <ul>
+                    <li className="mb-6 flex flex-wrap">
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        Software Testing Life Cycle
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        Manual Test
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        Testing Technique
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        API Test
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        Load Test
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        Test Automation with C#
+                      </span>
+                    </li>
+                  </ul>
+                </div>
                 <h1 className="mb-4 text-4xl text-gray-700 font-bold">Projects</h1>
                 <li className="mb-4">
                   <h2 className="text-2xl font-medium text-gray-800">Trust Accessories</h2>
@@ -162,7 +251,7 @@ const MyPortfolio = () => {
                     </div>
                     <div>
                       <span
-                        onClick={() => window.open("https://trust-accessories.web.app/")}
+                        onClick={() => window.open('https://trust-accessories.web.app/')}
                         className="my-5 text-blue-500 text-lg"
                         role="button"
                       >
@@ -181,7 +270,7 @@ const MyPortfolio = () => {
                     </div>
                     <div>
                       <span
-                        onClick={() => window.open("https://auto-mart-45993.web.app/")}
+                        onClick={() => window.open('https://auto-mart-45993.web.app/')}
                         className="my-5 text-blue-500 text-lg"
                         role="button"
                       >
@@ -198,7 +287,7 @@ const MyPortfolio = () => {
                     </div>
                     <div>
                       <span
-                        onClick={() => window.open("https://to-do-2623e.web.app/")}
+                        onClick={() => window.open('https://to-do-2623e.web.app/')}
                         className="my-5 text-blue-500 text-lg"
                         role="button"
                       >
@@ -217,7 +306,7 @@ const MyPortfolio = () => {
                     </div>
                     <div>
                       <span
-                        onClick={() => window.open("https://immigration-lab.web.app/")}
+                        onClick={() => window.open('https://immigration-lab.web.app/')}
                         className="my-5 text-blue-500 text-lg"
                         role="button"
                       >
@@ -225,58 +314,6 @@ const MyPortfolio = () => {
                       </span>
                     </div>
                   </div>
-                </li>
-              </ul>
-            </div>
-            <div className="mx-4">
-              <h1 className="mb-4 text-4xl text-gray-700 font-bold">Skill</h1>
-              <ul>
-                <li className="mb-6 flex flex-wrap">
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    HTML-5
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    CSS-3
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    Bootstrap
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    React Bootstrap
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    Tailwind css
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    DaisyUI
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    ReactJS
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    React Router
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    React Query
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    React Hook Form
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    React Query
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    ExpressJS
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    NodeJS
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    MongoDB
-                  </span>
-                  <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                    Firebase Authentication
-                  </span>
                 </li>
               </ul>
             </div>
