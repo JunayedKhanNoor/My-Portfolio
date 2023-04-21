@@ -1,6 +1,6 @@
-import React from "react";
-import Footer from "./Footer";
-import myImage from "../../assets/Junayed.jpg";
+import React from 'react';
+import Footer from './Footer';
+import myImage from '../../assets/Junayed.jpg';
 const AboutMe = () => {
   return (
     <div className="mt-20">
@@ -10,7 +10,7 @@ const AboutMe = () => {
 
           <div class="justify-between sm:flex">
             <div>
-              <h5 class="text-2xl font-bold text-gray-900">MERN Stack software developer</h5>
+              <h5 class="text-2xl font-bold text-gray-900">Software Quality Assurance Engineer</h5>
               <p class="mt-1 text-lg font-medium text-gray-600">Mohammad Junayed Khan Noor</p>
               <p class="mt-1 text-sm font-medium text-gray-600">Green University of bangladesh</p>
               <p class="mt-1 text-sm font-medium text-gray-600">CSE Department</p>
@@ -25,24 +25,26 @@ const AboutMe = () => {
 
           <div class="mt-4 sm:pr-8">
             <p class="text-sm text-gray-500">
-              My Goal: InshAllah, I will complete programming hero web development course on time
-              after that I will focus other opportunities provided by Programming Hero and also take
-              preparation for Job interview and keep searching Job and keep applying. I will also
-              focus on backend development, problem solving in LeetCode and also keep trying to
-              improve skill as a frontend developer.
+              Highly motivated software engineer in test with experience in manual and automated
+              testing and also full stack software development knowledge, as well as time management
+              and collaboration abilities.
             </p>
           </div>
 
           <dl class="flex mt-6">
             <div class="flex flex-col-reverse">
-              <dt class="text-sm font-medium text-gray-600">HTML, CSS, React JS, Express JS, Node JS, MongoDB, Tailwind CSS, Bootstrap, Firebase Authentication, React Hook Form, React Query</dt>
+              <dt class="text-sm font-medium text-gray-600">
+                HTML, CSS, React JS, Express JS, Node JS, MongoDB, Tailwind CSS, Bootstrap, Firebase
+                Authentication, React Hook Form, React Query
+              </dt>
               <dd class="text-lg text-gray-500">Technologies</dd>
             </div>
-
           </dl>
           <dl class="flex mt-6">
             <div class="flex flex-col-reverse">
-              <dt class="text-sm font-medium text-gray-600">Reading, Book Collecting, Traveling, Football, Cricket, Badminton, Sleeping</dt>
+              <dt class="text-sm font-medium text-gray-600">
+                Reading, Book Collecting, Traveling, Football, Cricket, Badminton, Sleeping
+              </dt>
               <dd class="text-lg text-gray-500">What I Likes!</dd>
             </div>
           </dl>

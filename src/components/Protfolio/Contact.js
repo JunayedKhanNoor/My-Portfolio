@@ -1,21 +1,21 @@
-import React, { useRef } from "react";
-import { toast } from "react-toastify";
-import me from "../../assets/Junayed.jpg";
-import Typical from "react-typical";
-import emailjs from "@emailjs/browser";
+import React, { useRef } from 'react';
+import { toast } from 'react-toastify';
+import me from '../../assets/Junayed.jpg';
+import Typical from 'react-typical';
+import emailjs from '@emailjs/browser';
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_j8kn29d", "template_v5i5kg8", form.current, "tMOELrBbtkOHfsHCu").then(
+    emailjs.sendForm('service_j8kn29d', 'template_v5i5kg8', form.current, 'tMOELrBbtkOHfsHCu').then(
       (result) => {
         console.log(result.text);
-        toast.success("Thanks for email!");
+        toast.success('Thanks for email!');
       },
       (error) => {
         console.log(error.text);
-        toast.error("Send failed!");
+        toast.error('Send failed!');
       }
     );
   };
@@ -25,7 +25,7 @@ const Contact = () => {
     console.log(e.target.email.value);
     console.log(e.target.description.value);
     e.target.reset();
-    toast("Thanks for email!");
+    toast('Thanks for email!');
   };
   return (
     <div className="hero min-h-screen bg-base-200 mt-20">
@@ -34,14 +34,15 @@ const Contact = () => {
           <img src={me} alt="" className="rounded-full h-60 w-60 border-4" />
           <div className="text-5xl font-bold text-primary">
             <Typical
-              steps={["Contact With Junayed!", 1000, "JavaScript Developer", 1000]}
+              steps={['Contact With Junayed!', 4000, 'Software Quality Assurance Engineer', 4000]}
               loop={Infinity}
               wrapper="p"
             />
           </div>
           <p className="py-6">
-            I am Mohammad Junayed Khan Noor from Dhaka, Bangladesh. I am working on React JS, Node
-            JS, MongoDB, Express JS. Please feel free to communicate.
+            I am Mohammad Junayed Khan Noor from Dhaka, Bangladesh. Highly motivated software
+            engineer in test with experience in manual and automated testing and also full stack
+            software development knowledge, as well as time management and collaboration abilities.
           </p>
           <p className="py-2">Call: +8801303021131</p>
         </div>
@@ -96,12 +97,12 @@ const Contact = () => {
                 <span className="label-text">Name</span>
               </label>
               {/* <label>Name</label> */}
-              <input type="text" name="user_name" className="input input-bordered"/>
+              <input type="text" name="user_name" className="input input-bordered" />
               {/* <label>Email</label> */}
               <label className="label">
                 <span className="label-text">Email</span>
               </label>
-              <input type="email" name="user_email" className="input input-bordered"/>
+              <input type="email" name="user_email" className="input input-bordered" />
               {/* <label>Message</label> */}
               <label className="label">
                 <span className="label-text">Message</span>

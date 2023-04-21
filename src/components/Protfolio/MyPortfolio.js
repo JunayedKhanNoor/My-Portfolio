@@ -235,7 +235,19 @@ const MyPortfolio = () => {
                         Load Test
                       </span>
                       <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                        Test Automation with C#
+                        Test Automation
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                        Selenium with JAVA
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                      Selenium with C#
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                      Playwright With JavaScript
+                      </span>
+                      <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
+                      Client Requirement Analysis
                       </span>
                     </li>
                   </ul>
