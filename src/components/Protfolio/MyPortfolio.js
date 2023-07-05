@@ -31,7 +31,8 @@ const MyPortfolio = () => {
                   <div className="mr-2 mt-1">
                     <MdWork />
                   </div>
-                  Working at OnnoRokom Software Ltd, Dhaka, Bangladesh
+                  Former Assistant Software Quality Assurance Engineer at OnnoRokom Software Ltd,
+                  Dhaka, Bangladesh
                 </div>
                 <div className="my-5 text-lg text-gray-600 flex">
                   <div className="mr-2">
@@ -60,13 +61,13 @@ const MyPortfolio = () => {
                       <path d="M11.42,21.814C11.594,21.938,11.797,22,12,22s0.406-0.062,0.58-0.186C12.884,21.599,20.029,16.44,20,10 c0-4.411-3.589-8-8-8S4,5.589,4,9.995C3.971,16.44,11.116,21.599,11.42,21.814z M12,4c3.309,0,6,2.691,6,6.005 c0.021,4.438-4.388,8.423-6,9.73C10.389,18.427,5.979,14.441,6,10C6,6.691,8.691,4,12,4z" />
                     </svg>
                   </div>
-                  Dhaka, Bangladesh
+                  Lake Worth, Florida 33463, USA
                 </div>
                 <div className="mt-5 text-lg text-gray-600 flex">
                   <div className="mr-2">
                     <BiPhoneCall className="text-neutral h-6 w-6"></BiPhoneCall>
                   </div>
-                  +8801303021131
+                  +1(561) 913-6060
                 </div>
                 <div className="flex">
                   <span
@@ -241,13 +242,13 @@ const MyPortfolio = () => {
                         Selenium with JAVA
                       </span>
                       <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                      Selenium with C#
+                        Selenium with C#
                       </span>
                       <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                      Playwright With JavaScript
+                        Playwright With JavaScript
                       </span>
                       <span className="mr-2 my-1 rounded-full border px-4 text-sm py-2 font-medium bg-gray-200">
-                      Client Requirement Analysis
+                        Client Requirement Analysis
                       </span>
                     </li>
                   </ul>

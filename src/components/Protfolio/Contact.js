@@ -44,7 +44,7 @@ const Contact = () => {
             engineer in test with experience in manual and automated testing and also full stack
             software development knowledge, as well as time management and collaboration abilities.
           </p>
-          <p className="py-2">Call: +8801303021131</p>
+          <p className="py-2">Call: +1 (561) 913-6060</p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           {/* <form onSubmit={handleSubmit}>
